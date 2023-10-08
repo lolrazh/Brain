@@ -32,6 +32,10 @@ For more information about API Costs, check out [OpenAI's Pricing](https://opena
 
 ![](assets/component.png)
 
+- Make sure Rhino is connected to the internet.
+- It is important to name all your connected sliders before using the component.
+- For the component to work properly, the sliders have to be connected directly without any kind of geometry filters.
+
 You may also find example files [here](gh/).
 
 ## How it works
