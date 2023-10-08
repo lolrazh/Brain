@@ -28,7 +28,7 @@ For a more in-depth guide about building plugin files from source code, check ou
 
 For more information about API Costs, check out [OpenAI's Pricing](https://openai.com/pricing)
 
-## How to use
+## How to Use
 
 ![](assets/component.png)
 
@@ -38,7 +38,7 @@ For more information about API Costs, check out [OpenAI's Pricing](https://opena
 
 You may also find example files [here](gh/).
 
-## How it works
+## How it Works
 
 ### The Component
 
