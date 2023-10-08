@@ -13,6 +13,7 @@ Remember that this tool only lets you manipulate your Grasshopper script using t
 Install the plug-in from [Food4Rhino](https://www.food4rhino.com/en/app/brain)
 
 1. Go to the Grasshopper Libraries folder.
+
     1.1 In Grasshopper, go to File>Special Folders>Components Folder
     1.2 In Windows,  go to C:\Users\<USERNAME>\AppData\Roaming\Grasshopper\Libraries
 2. Delete any previous versions of Brain (if any).
