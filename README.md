@@ -14,11 +14,11 @@ Install the plug-in from [Food4Rhino](https://www.food4rhino.com/en/app/brain).
 
 ### Package Manager
 
-Install the Brain Yak package from Rhino's Package Manager
+Install Brain's Yak package from Rhino's Package Manager.
 
 ### Build from source
 
-For a more in-depth guide about building plugin files from source code, check out this thread by **Guilio Piacentino** on the [Rhinoceros Forums](https://discourse.mcneel.com/t/tutorial-creating-a-grasshopper-component-with-the-python-ghpy-compiler/38552)
+For a more in-depth guide about building plugin files from source code, check out this thread by **Guilio Piacentino** on the [Rhinoceros Forums](https://discourse.mcneel.com/t/tutorial-creating-a-grasshopper-component-with-the-python-ghpy-compiler/38552).
 
 ## API Key Configuration
 
