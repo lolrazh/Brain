@@ -1,0 +1,12 @@
+---
+name: Brain
+version: 1.0.0
+authors:
+- Sandheep Rajkumar
+description: Brain is a GPT-powered Grasshopper component, that lets you control your scripts through natural language.
+url: https://github.com/lolrazh/Brain
+icon: brain_gh.png
+keywords:
+- brain
+- ai
+- gpt
