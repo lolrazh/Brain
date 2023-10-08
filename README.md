@@ -32,7 +32,7 @@ For more information about API Costs, check out [OpenAI's Pricing](https://opena
 
 ![](assets/component.png)
 
-You may also find example files [here]().
+You may also find example files [here](gh/).
 
 ## How it works
 
