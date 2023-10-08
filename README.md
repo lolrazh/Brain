@@ -8,7 +8,7 @@ Remember that this tool only lets you manipulate your Grasshopper script using t
 
 ## Installation
 
-Installation can be done in one of three following ways.
+Installation can be done in one of three ways.
 
 ### Food4Rhino
 
