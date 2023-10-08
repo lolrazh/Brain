@@ -18,7 +18,7 @@ Install the Brain Yak package from Rhino's Package Manager
 
 ### Build from source
 
-For a more in-depth guide about building plugin files from source code, check out this thread by Guilio Piacentino on the [Rhinoceros Forums](https://discourse.mcneel.com/t/tutorial-creating-a-grasshopper-component-with-the-python-ghpy-compiler/38552)
+For a more in-depth guide about building plugin files from source code, check out this thread by **Guilio Piacentino** on the [Rhinoceros Forums](https://discourse.mcneel.com/t/tutorial-creating-a-grasshopper-component-with-the-python-ghpy-compiler/38552)
 
 ## API Key Configuration
 
@@ -84,7 +84,7 @@ The project 'Brain' is licensed under the GNU Lesser General Public License v3.0
 
 ## Acknowledgements
 
-- [Kaushik LS](https://github.com/thekaushikls) for helping me compile this project and for his other valuable inputs.
+- **[Kaushik LS](https://github.com/thekaushikls)** for helping me compile this project and for his other valuable inputs.
 
 ## Support 
 
