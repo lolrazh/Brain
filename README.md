@@ -10,7 +10,7 @@ Remember that this tool only lets you manipulate your Grasshopper script using t
 
 ### Food4Rhino
 
-Install the plug-in from [Food4Rhino](https://www.food4rhino.com/en/app/brain)
+Install the plug-in from [Food4Rhino](https://www.food4rhino.com/en/app/brain).
 
 ### Package Manager
 
@@ -24,7 +24,7 @@ For a more in-depth guide about building plugin files from source code, check ou
 
 1. To be able to use your API Key, set up billing at [OpenAI's Billing Page](https://platform.openai.com/account/billing/overview).
 2. Then go the [OpenAI's API Keys Page](https://platform.openai.com/account/api-keys) to generate your API Key.
-3. Paste it in your Grasshopper script in a panel or save it somewhere safe since you will not be able to see it again.
+3. Paste the key in your Grasshopper script within a panel, or save it in a secure location as you won't be able to retrieve it again.
 
 For more information about API Costs, check out [OpenAI's Pricing](https://openai.com/pricing)
 
@@ -38,7 +38,7 @@ You may also find example files [here]().
 
 ### The Component
 
-A simple flowchart explaining how the component is used.
+Below is a simple flowchart explaining how the component is used:
 
 ```mermaid
 graph LR;
@@ -52,8 +52,7 @@ F --> H{Component};
 
 ### The “AI”
 
-A simple flowchart explaining how the component gathers data about the parameters and sends an API call to OpenAI. 
-
+This flowchart explains how the component gathers data about the parameters and sends an API call to OpenAI:
 ```mermaid
 graph LR;
 A((Plugin Context)) --> E;
@@ -74,7 +73,7 @@ J --> A;
 
 **Param Data** is a set of all the parameters you would want to control, provided they are connected to the component. This chunk of text goes into the `user` part of the prompt for the API call and is collected everytime to account for any changes in the parameters.
 
-**Text Prompt** is basically a short sentence in natural language describing what you want the component to do. This chunk of text also goes into the `user` part of the prompt for the API call and is arugably the most important part of the component.
+**Text Prompt** is a short sentence in natural language describing what you want the component to do. This chunk of text also goes into the `user` part of the prompt for the API call and is arugably the most important part of the component.
 
 ## License
 
