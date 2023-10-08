@@ -4,7 +4,7 @@
 
 ![](assets/brain.gif)
 
-Remember that this tool only lets you manipulate your Grasshopper script using the parameters and the parameter domains that are already  in your script. If you're more interested in generating scripts using natural language, check out [GHPT](https://github.com/enmerk4r/GHPT).
+Remember that this tool only lets you manipulate your Grasshopper script using the parameters and the parameter domains that are already  in your script. If you're interested in generating scripts using natural language, check out [GHPT](https://github.com/enmerk4r/GHPT).
 
 ## Installation
 
