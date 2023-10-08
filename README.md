@@ -44,7 +44,7 @@ You may also find example files [here](gh/).
 
 ### The Component
 
-Below is a simple flowchart explaining how the component is used:
+This flowchart explains how the component is used:
 
 ```mermaid
 graph LR;
