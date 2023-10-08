@@ -8,6 +8,8 @@ Remember that this tool only lets you manipulate your Grasshopper script using t
 
 ## Installation
 
+Installation can be done in one of three following ways.
+
 ### Food4Rhino
 
 Install the plug-in from [Food4Rhino](https://www.food4rhino.com/en/app/brain).
