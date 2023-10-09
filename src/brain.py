@@ -12,7 +12,6 @@ from System.Text import Encoding
 from System.Net import WebRequest, WebHeaderCollection, WebProxy, WebException
 
 
-
 # FUNCTION TO SEND API CALL
 def send_request(user_prompt, Description, API_Key):
     plugin_context = "You are GrasshopperAI, an AI tool working within Grasshopper to manipulate Grasshopper scripts through natural language. You will be given a description of the entire script and data about the sliders in the format <SLIDER_NAME> - <SLIDER_VALUE>. After understanding the prompt, you have to understand what slider to change and what the new slider value would be. To do that, all you have to do is call a function that I have already programmed which is change_slider_value(str(<SLIDER_NAME>), <NEW_SLIDER_VALUE>). Remember to respond only with the function and enclose the name in an str() function." # system prompt for gpt
@@ -68,7 +67,6 @@ def construct_prompt(param_data):
     return prompt
 
 
-
 class Brain(component):
     def __new__(cls):
         instance = Grasshopper.Kernel.GH_Component.__new__(cls,
@@ -78,7 +76,7 @@ class Brain(component):
     def get_ComponentGuid(self):
         return System.Guid("bc7f32af-9b9c-4cf6-938a-21b24702c0da")
     
-    def SetUpParam(self, p, name, nickname, description):
+    def SetUpParam(self, p, name, nickname, description): # set up component parameters
         p.Name = name
         p.NickName = nickname
         p.Description = description
@@ -105,9 +103,9 @@ class Brain(component):
         p.Access = Grasshopper.Kernel.GH_ParamAccess.item
         self.Params.Input.Add(p)
         
-    
     def RegisterOutputParams(self, pManager):
         pass    
+
     def SolveInstance(self, DA):
         p0 = self.marshal.GetInput(DA, 0)
         p1 = self.marshal.GetInput(DA, 1)
@@ -115,7 +113,6 @@ class Brain(component):
         p3 = self.marshal.GetInput(DA, 3)
         result = self.RunScript(p0, p1, p2, p3)
 
-        
     def get_Internal_Icon_24x24(self):
         o = "iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAI6SURBVEhLvdVJyE5RHMfxa54zZYqQspAsJDZkLgtZGBYoUli9xcKwYMdKWFmYsjBmWGBhxUqRjQgrJXNKUobM0/d77jk99z3v875vj0d+9em553Tv+d9znnPvLRpMn/j7TzIBY9AVk3AFvyt+4TrGoaGsxWM4gO7jG37iAtZhYzy20FtMQ6fpi4vwouc4hZOx/QJTkWcxPsEbGmhHR0mD7URvO8guOIsZoVWme9QPw7ABXteCdjMbnrQ3tMpMgX2HQ6sopuMdLPgFLpm+w/NeYyHqxkE8aVRoFUUX3MQHjLCDOLiDPcFRrMECWNhZW9QxDsEZtspdeHHKSnjyptAql+8HVoVW/YzEPnjdETuquQOna9yWz2Dbfe9SfcV7WHg1lkbL4u9wGGd+BhaZZUfKHtjpfjdX4Yx8Fs7BYs6guuZV15AyFC7XwdCKGQ//vMuhVT48nuRWddAtGILJmIM3yIusQIpb91Z5WMtxeOL80Kr98bdDq3XcmhauFngInyXjLG+Uh7UMhmv9CP4PnvwRB5BnIqqDJ9vQAxY4hjbZDk9cH1rlVvQ14fJU41K6pHmBl3DtPV6ENvHOH8Dpb8VyWOAS5sIH8iy8w0E4gbyITqPdzIQDeIfuHPmnfYZLaHszjFs2H/wVOn0vdUOvqGc0AKMxFsa+e8gLuEz90XTSSy73FOll+dfxYfJO6xU4j6azH/UG1zw0Fb9e6c2Z8/vRdNI+r3LndPjBaSR+xZZgB3bDb3TaWf87RfEHQBfFoHsNd3QAAAAASUVORK5CYII="
         return System.Drawing.Bitmap(System.IO.MemoryStream(System.Convert.FromBase64String(o)))
@@ -137,6 +134,7 @@ class Brain(component):
                         obj.ExpireSolution(True)
                     else:
                         display_error("{} is out of range for '{}'.".format(value, nickname))
+
         # START RUNSCRIPT
         ghdoc = self.OnPingDocument()
         if not ghdoc:
@@ -159,6 +157,7 @@ class Brain(component):
                         display_error("Failed to get a valid response from the OpenAI API.")
                 else:
                     pass
+
 
 import GhPython
 import System
