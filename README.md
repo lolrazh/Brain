@@ -8,7 +8,9 @@ Remember that this tool only lets you manipulate your Grasshopper script using t
 
 ## Installation
 
-Installation can be done in one of three ways.
+Installation can be done in one of three ways. After installation, the component may be found here.
+
+![](assets/location.png)
 
 ### Food4Rhino
 
